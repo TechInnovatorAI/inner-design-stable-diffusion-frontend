@@ -226,7 +226,7 @@ const RestyleImage = ({
           </>
         ) : (
           <>
-            <Typography variant='h6'>新しいデザインの作成</Typography>
+            <Typography variant='h6'>Creating a new design</Typography>
           </>
         )}
       </Grid>

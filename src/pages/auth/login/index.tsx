@@ -102,7 +102,7 @@ const LoginPage = () => {
     auth.login({ email, password, rememberMe }, () => {
       setError('email', {
         type: 'manual',
-        message: 'メールアドレスまたはパスワードが無効です'
+        message: 'Invalid email address or password'
       })
     })
   }
@@ -141,7 +141,7 @@ const LoginPage = () => {
                 render={({ field: { value, onChange, onBlur } }) => (
                   <TextField
                     autoFocus
-                    label='Eメール'
+                    label='Email'
                     value={value}
                     onBlur={onBlur}
                     onChange={onChange}
@@ -156,7 +156,7 @@ const LoginPage = () => {
             </FormControl>
             <FormControl fullWidth>
               <InputLabel htmlFor='auth-login-v2-password' error={Boolean(errors.password)}>
-                パスワード
+                password
               </InputLabel>
               <Controller
                 name='password'
@@ -166,7 +166,7 @@ const LoginPage = () => {
                   <OutlinedInput
                     value={value}
                     onBlur={onBlur}
-                    label='パスワード'
+                    label='password'
                     onChange={onChange}
                     id='auth-login-v2-password'
                     error={Boolean(errors.password)}
@@ -187,7 +187,7 @@ const LoginPage = () => {
               />
               {errors.password && (
                 <FormHelperText sx={{ color: 'error.main' }} id=''>
-                  パスワードをご入力ください。
+                  Please enter your password.
                 </FormHelperText>
               )}
             </FormControl>
@@ -201,7 +201,7 @@ const LoginPage = () => {
               }}
             >
               <FormControlLabel
-                label='ログインしたままにする'
+                label='Stay logged in'
                 sx={{ color: 'white' }}
                 control={<Checkbox checked={rememberMe} onChange={e => setRememberMe(e.target.checked)} />}
               />
@@ -211,11 +211,11 @@ const LoginPage = () => {
                 href='/auth/forgot-password'
                 sx={{ color: 'primary.main', textDecoration: 'none' }}
               >
-                パスワードをお忘れですか？
+                Did you forget your password?
               </Typography>
             </Box>
             <Button fullWidth size='large' type='submit' variant='contained' sx={{ mb: 7 }}>
-              ログイン
+              Log in
             </Button>
             {/* <Box
               sx={{
@@ -236,7 +236,7 @@ const LoginPage = () => {
                 gap: 2
               }}
             >
-              <Typography sx={{ color: 'white' }}>初めての方は、こちら</Typography>
+              <Typography sx={{ color: 'white' }}>The first one here</Typography>
               <Button
                 variant='outlined'
                 href='/auth/register'
@@ -244,7 +244,7 @@ const LoginPage = () => {
                 size='small'
                 sx={{ mb: 7, borderRadius: 5, background: 'white', color: '#666CFF' }}
               >
-                登録する
+                register
               </Button>
             </Box>
           </form>

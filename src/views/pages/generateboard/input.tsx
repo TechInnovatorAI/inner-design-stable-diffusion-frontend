@@ -355,7 +355,7 @@ const Input = ({
       <CardContent>
         <Box color={'#40F1FF'} borderRadius={1} border={2}>
           <Typography paddingX={2} paddingY={4} color={'white'} fontSize={'body2'} fontWeight={400}>
-            画像をアップロードして、 “生成方法”,”部屋のタイプ”,”スタイルを選び” プロンプト(任意)を入力して、スタート
+            Upload your image, choose "Generation method", "Room type", and "Style" and fill in the prompts (optional) to get started.
           </Typography>
         </Box>
         <Typography
@@ -367,7 +367,7 @@ const Input = ({
           sx={{ mt: 6, mb: 4 }}
           color={'#40F1FF'}
         >
-          早速スタートする{' '}
+          Get started right away{' '}
         </Typography>
         <FileUploaderSingle
           inputPath={inputPath}
@@ -377,7 +377,7 @@ const Input = ({
         />
         <Grid item xs={12}>
           <Typography fontSize={'body2'} fontWeight={400} sx={{ mt: 2, mb: 2, pl: 2 }} color={'white'}>
-            生成方法の選択
+            Selecting a generation method
           </Typography>
           <ToggleButtonGroup
             exclusive
@@ -387,16 +387,16 @@ const Input = ({
             fullWidth
           >
             <ToggleButton value={false} aria-label='redesign'>
-              <Typography sx={{ fontWeight: 500 }}>Re-デザイン</Typography>
+              <Typography sx={{ fontWeight: 500 }}>Re-design</Typography>
             </ToggleButton>
             <ToggleButton value={true} aria-label='staging'>
-              <Typography sx={{ fontWeight: 500 }}>ステージングプロ</Typography>
+              <Typography sx={{ fontWeight: 500 }}>Staging Pro</Typography>
             </ToggleButton>
           </ToggleButtonGroup>
         </Grid>
         <Grid item xs={12}>
           <Typography fontSize={'body2'} fontWeight={400} sx={{ mt: 2, mb: 2, pl: 2 }} color={'white'}>
-          部屋のタイプを選択
+            Select your room type
           </Typography>
           <Autocomplete
             sx={{ width: 'full', color: '#40F1FF' }}
@@ -413,7 +413,7 @@ const Input = ({
         </Grid>
         <Grid item xs={12}>
           <Typography fontSize={'body2'} fontWeight={400} sx={{ mt: 2, mb: 2, pl: 2 }} color={'white'}>
-            部屋のスタイルを選択
+            Choose a room style
           </Typography>
           <Autocomplete
             sx={{ width: 'full', color: '#40F1FF' }}
@@ -429,7 +429,7 @@ const Input = ({
         </Grid>
         <Grid item xs={12}>
           <Typography fontSize={'body2'} fontWeight={400} sx={{ mt: 2, mb: 2, pl: 2 }} color={'white'}>
-            カラーから選択(複数選択可)
+            Select from colors (multiple selections possible)
           </Typography>
           <TextField
             onClick={() => setColorOpen(true)}
@@ -442,8 +442,7 @@ const Input = ({
         </Grid>
         <Grid item xs={12}>
           <Typography fontSize={'body2'} fontWeight={400} sx={{ mt: 2, mb: 2, pl: 2 }} color={'white'}>
-            フロア材から選択(複数選択可)
-          </Typography>
+            Select from floor materials (multiple selections possible)          </Typography>
           <TextField
             onClick={() => setFloorOpen(true)}
             maxRows={1}
@@ -455,7 +454,7 @@ const Input = ({
         </Grid>
         <Grid item xs={12}>
           <Typography fontSize={'body2'} fontWeight={400} sx={{ mt: 2, mb: 2, pl: 2 }} color={'white'}>
-            マテリアルから選択(複数選択可)
+            Select from materials (multiple selections possible)
           </Typography>
           <TextField
             onClick={() => setMaterialOpen(true)}
@@ -468,7 +467,7 @@ const Input = ({
         </Grid>
         <Grid item xs={12}>
           <Typography fontSize={'body2'} fontWeight={400} sx={{ mt: 2, mb: 2, pl: 2 }} color={'white'}>
-            プロンプトを入力(任意)
+            Enter the prompt (optional)
           </Typography>
           <TextField
             multiline
@@ -494,7 +493,7 @@ const Input = ({
             sx={{ paddingY: 2, paddingX: 10, borderRadius: 5 }}
             onClick={() => setGenRoom(true)}
           >
-            送信
+            Send
           </Button>
         </Box>
       </CardContent>

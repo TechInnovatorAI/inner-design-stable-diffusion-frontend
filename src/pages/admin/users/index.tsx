@@ -63,55 +63,55 @@ const headCells: readonly HeadCell[] = [
     id: 'name',
     numeric: false,
     disablePadding: true,
-    label: 'ユーザー名'
+    label: 'name'
   },
   {
     id: 'email',
     numeric: false,
     disablePadding: false,
-    label: 'Eメール'
+    label: 'email'
   },
   {
     id: 'lastname',
     numeric: false,
     disablePadding: false,
-    label: '姓'
+    label: 'last name'
   },
   {
     id: 'firstname',
     numeric: false,
     disablePadding: false,
-    label: '名'
+    label: 'first name'
   },
   {
     id: 'address',
     numeric: false,
     disablePadding: false,
-    label: '住所'
+    label: 'address'
   },
   {
     id: 'phoneNumber',
     numeric: false,
     disablePadding: false,
-    label: '電話番号'
+    label: 'telephone number'
   },
   {
     id: 'createdAt',
     numeric: false,
     disablePadding: false,
-    label: '作成日'
+    label: 'Created date'
   },
   {
     id: 'lastlogindate',
     numeric: false,
     disablePadding: false,
-    label: '最終ログイン'
+    label: 'Last Login'
   },
   {
     id: 'role',
     numeric: false,
     disablePadding: false,
-    label: '役割'
+    label: 'role'
   }
 ]
 
@@ -154,7 +154,7 @@ function EnhancedTableHead(props: EnhancedTableProps) {
             </TableSortLabel>
           </TableCell>
         ))}
-        <TableCell>プロジェクト</TableCell>
+        <TableCell>project</TableCell>
       </TableRow>
     </TableHead>
   )
@@ -175,11 +175,11 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
     >
       {numSelected > 0 ? (
         <Typography sx={{ flex: '1 1 100%' }} color='inherit' variant='subtitle1' component='div'>
-          {numSelected} 選択済み
+          {numSelected} selected
         </Typography>
       ) : (
         <Typography sx={{ flex: '1 1 100%' }} variant='h6' id='tableTitle' component='div'>
-          ユーザーリスト
+          User List
         </Typography>
       )}
     </Toolbar>

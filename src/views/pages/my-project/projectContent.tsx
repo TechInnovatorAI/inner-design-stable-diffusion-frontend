@@ -14,8 +14,8 @@ const ProjectContent = ({ userId }: { userId?: any }) => {
     restyle: string
     staging: string
   } = {
-    restyle: 'Re-デザイン',
-    staging: 'ステージング'
+    restyle: 'Re-design',
+    staging: 'Staging'
   }
 
   const [showState, setShowState] = useState<boolean>(false)
@@ -122,10 +122,10 @@ const ProjectContent = ({ userId }: { userId?: any }) => {
     <Grid>
       <ToggleButtonGroup exclusive value={showState} onChange={handleAlignment} aria-label='text alignment' fullWidth>
         <ToggleButton value={false} aria-label='redesign'>
-          <Typography sx={{ fontWeight: 500 }}>Re-デザイン</Typography>
+          <Typography sx={{ fontWeight: 500 }}>Re-design</Typography>
         </ToggleButton>
         <ToggleButton value={true} aria-label='staging'>
-          <Typography sx={{ fontWeight: 500 }}>ステージングプロ</Typography>
+          <Typography sx={{ fontWeight: 500 }}>Staging Pro</Typography>
         </ToggleButton>
       </ToggleButtonGroup>
       <ImageList variant='quilted' cols={5} gap={8}>
@@ -173,7 +173,7 @@ const ProjectContent = ({ userId }: { userId?: any }) => {
             </ImageListItem>
           ))
         ) : (
-          <Typography variant='h6'>新しいデザインの作成</Typography>
+          <Typography variant='h6'>Creating a new design</Typography>
         )}
       </ImageList>
       <ProjectItemModal open={showProject} setOpen={setShowProject} item={projectItem} />

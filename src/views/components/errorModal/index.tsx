@@ -36,18 +36,18 @@ const ErrorModal = ({
       >
         <Grid sx={{ p: 10 }}>
           <Typography color={'#40f1ff'} fontWeight={600} sx={{ pb: 4 }}>
-            ご提案が出来ませんでした。
+            I couldn't make a suggestion.
           </Typography>
           <Typography color={'#40f1ff'} fontWeight={600}>
-            再度お試しください。
+            Please try again.
           </Typography>
         </Grid>
         <Grid sx={{ display: 'flex', justifyContent: 'center', p: 2, gap: 6 }}>
           <Button onClick={handleClose} sx={{ color: 'white', border: '1px solid white' }}>
-            閉じる
+            close
           </Button>
           <Button onClick={reDesign} sx={{ color: 'white', border: '1px solid white' }} autoFocus>
-            再生成する
+            Regenerate
           </Button>
         </Grid>
       </Dialog>

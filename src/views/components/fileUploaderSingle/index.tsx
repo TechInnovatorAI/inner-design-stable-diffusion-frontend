@@ -29,7 +29,7 @@ const FileuploadSingle = ({
     const fileObj: any = e.target.files[0]
 
     if (fileObj && fileObj.size < 30000) {
-      toast.error('許可しないファイル形式です。 サイズが3M以上のファイルから対応しています。')
+      toast.error('This file format is not permitted. Files over 3MB in size are supported.')
 
       return false
     }
@@ -73,7 +73,7 @@ const FileuploadSingle = ({
             right={1 / 2}
             bottom={1 / 2}
           >
-            画像アップロード
+            Image upload
           </Typography>
         </Grid>
       </label>

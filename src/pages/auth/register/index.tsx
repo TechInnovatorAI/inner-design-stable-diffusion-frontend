@@ -267,7 +267,7 @@ const Register = () => {
             </FormControl>
             <FormControl fullWidth>
               <InputLabel htmlFor='auth-login-v2-password' error={Boolean(errors.password)}>
-              パスワード
+                パスワード
               </InputLabel>
               <Controller
                 name='password'
@@ -347,7 +347,7 @@ const Register = () => {
               }
             />
             <Button fullWidth size='large' type='submit' variant='contained' sx={{ mb: 7 }}>
-            サインアップ
+              サインアップ
             </Button>
             <Box
               sx={{
@@ -366,7 +366,7 @@ const Register = () => {
                 size='small'
                 sx={{ mb: 7, borderRadius: 5, background: 'white', color: '#666CFF' }}
               >
-                ログイン
+                Log in
               </Button>
             </Box>
           </form>

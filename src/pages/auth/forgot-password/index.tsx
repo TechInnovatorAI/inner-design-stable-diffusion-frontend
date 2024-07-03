@@ -86,7 +86,7 @@ const ForgotPassword = () => {
     auth.forgotpassword({ email }, () => {
       setError('email', {
         type: 'manual',
-        message: 'メールアドレスまたはパスワードが無効です'
+        message: 'Invalid email address or password'
       })
     })
   }
@@ -118,10 +118,10 @@ const ForgotPassword = () => {
           </Box>
           <Box sx={{ mb: 6.5 }}>
             <Typography variant='h5' sx={{ mb: 1.5, letterSpacing: '0.18px', fontWeight: 600 }}>
-              パスワードをお忘れですか？ 🔒
+              Did you forget your password? 🔒
             </Typography>
             <Typography variant='body2'>
-              ご登録いただいたメールアドレスから &prime;パスワードの再発行をしてください。
+              From the registered email address &prime;Please reissue your password.
             </Typography>
           </Box>
           <form noValidate autoComplete='off' onSubmit={handleSubmit(onSubmit)}>
@@ -149,7 +149,7 @@ const ForgotPassword = () => {
               )} */}
             </FormControl>
             <Button fullWidth size='large' type='submit' variant='contained' sx={{ mb: 5.25 }}>
-              パスワードの再発行
+              password reset
             </Button>
             <Typography
               sx={{
@@ -160,7 +160,7 @@ const ForgotPassword = () => {
             >
               <LinkStyled href='/auth/login'>
                 <Icon icon='mdi:chevron-left' fontSize='2rem' />
-                <span>ログインに戻る</span>
+                <span>Return to login</span>
               </LinkStyled>
             </Typography>
           </form>

@@ -5,7 +5,7 @@ import { Grid, ImageList, ImageListItem, Typography } from '@mui/material'
 
 // ** MUI Imports
 import { ProjectInterface } from 'src/context/types'
-import { CompareIcon, DownloadIcon, EditIcon, RegenerateIcon , CollectionsBookmarkOutlinedIcon } from './Icons'
+import { CompareIcon, DownloadIcon, EditIcon, RegenerateIcon, CollectionsBookmarkOutlinedIcon } from './Icons'
 import SwiperModal from '../swiperModal'
 import { downloadImage } from 'src/views/utils/download'
 
@@ -60,7 +60,7 @@ const ShowResult = ({
     setOpen ? setOpen(false) : false
   }
 
-  const handleCollect = async (baseLink:string) => {
+  const handleCollect = async (baseLink: string) => {
     await handleDoubleGen(baseLink)
   }
 
@@ -142,7 +142,7 @@ const ShowResult = ({
             </ImageListItem>
           ))
         ) : (
-          <Typography variant='h6'>新しいデザインの作成</Typography>
+          <Typography variant='h6'>Creating a new design</Typography>
         )}
       </ImageList>
       <SwiperModal open={openswiper} setOpen={setOpenSwiper} images={itemArray} initShow={initShow} />

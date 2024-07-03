@@ -54,7 +54,7 @@ const AppBarContent = (props: Props) => {
           <UserMenu settings={settings} />
         ) : (
           <Button variant='contained' href='/auth/login'>
-            ログイン
+            Log in
           </Button>
         )}
       </Box>

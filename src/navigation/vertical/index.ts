@@ -4,17 +4,17 @@ import { VerticalNavItemsType } from 'src/@core/layouts/types'
 const navigation = (): VerticalNavItemsType => {
   return [
     {
-      title: '管理者トップ',
+      title: 'Administrator Top',
       icon: 'mdi:home-account',
       children: [
         {
           icon: 'mdi:account-edit-outline',
-          title: 'ユーザーリスト',
+          title: 'User List',
           path: '/admin/users'
         },
         {
           icon: 'mdi:file-document-outline',
-          title: 'ご利用履歴',
+          title: 'Usage history',
           path: '/admin/bill'
         }
       ]
@@ -29,21 +29,21 @@ const navigation = (): VerticalNavItemsType => {
       path: '/acl',
       action: 'read',
       subject: 'acl-page',
-      title: 'マイプロジェクト',
+      title: 'My Project',
       icon: 'material-symbols:home-repair-service-rounded'
     },
     {
       path: '/acl/edit',
       action: 'read',
       subject: 'acl-page',
-      title: 'プロジェクトの作成',
+      title: 'Create a project',
       icon: 'material-symbols:chair'
     },
     {
       path: '/acl/help',
       action: 'read',
       subject: 'acl-page',
-      title: 'このサービスについて',
+      title: 'About this service',
       icon: 'mdi:help-circle'
     }
   ]

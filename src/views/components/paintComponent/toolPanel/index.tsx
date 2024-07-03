@@ -80,14 +80,14 @@ const ToolPanel: React.FC<IProps> = ({
                 variant='body1'
                 sx={{ fontWeight: 800, display: 'flex', justifyContent: 'center' }}
               >
-                保存しました
+                Saved
               </Typography>
               <Typography
                 padding={1}
                 variant='body1'
                 sx={{ fontWeight: 800, display: 'flex', justifyContent: 'center' }}
               >
-                マスクツールの編集が可能です。
+                You can edit the mask tool.
               </Typography>
             </Grid>
           </Box>
@@ -195,7 +195,7 @@ const ToolPanel: React.FC<IProps> = ({
                   fullWidth
                 >
                   <Typography sx={{ fontWeight: 500 }} width={70}>
-                    マスク
+                    mask
                   </Typography>
                 </ToggleButton>
                 <ToggleButton
@@ -205,7 +205,7 @@ const ToolPanel: React.FC<IProps> = ({
                   fullWidth
                 >
                   <Typography sx={{ fontWeight: 500 }} width={70}>
-                    消しゴム
+                    eraser
                   </Typography>
                 </ToggleButton>
               </ToggleButtonGroup>
@@ -213,7 +213,7 @@ const ToolPanel: React.FC<IProps> = ({
             {/* 宽度设置 */}
             {(toolType === CANVAS_ELE_TYPE.FREE_DRAW || toolType === CANVAS_ELE_TYPE.ERASER) && (
               <Grid sx={{ mt: 4 }}>
-                <Typography sx={{ fontWeight: 500, pb: 2 }}>ブラシサイズ</Typography>
+                <Typography sx={{ fontWeight: 500, pb: 2 }}>Brush Size</Typography>
                 <Grid sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
                   <Slider
                     min={1}
@@ -229,7 +229,7 @@ const ToolPanel: React.FC<IProps> = ({
             )}
             {/* 操作画板 */}
             <Grid sx={{ mt: 2 }}>
-              <Typography sx={{ fontWeight: 500, pb: 2 }}>ツール</Typography>
+              <Typography sx={{ fontWeight: 500, pb: 2 }}>tool</Typography>
               <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                 <Card onClick={undo} sx={{ padding: 2, cursor: 'pointer' }}>
                   <UndoIcon />

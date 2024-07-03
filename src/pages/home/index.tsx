@@ -191,19 +191,19 @@ const headCells: readonly HeadCell[] = [
     id: 'createdAt',
     numeric: false,
     disablePadding: false,
-    label: '作成日'
+    label: 'createdAt'
   },
   {
     id: 'lastlogindate',
     numeric: false,
     disablePadding: false,
-    label: '最終ログイン'
+    label: 'Last Login'
   },
   {
     id: 'role',
     numeric: false,
     disablePadding: false,
-    label: '役割'
+    label: 'role'
   }
 
   // {
@@ -259,7 +259,7 @@ function EnhancedTableHead(props: EnhancedTableProps) {
             </TableSortLabel>
           </TableCell>
         ))}
-        <TableCell>プロジェクト</TableCell>
+        <TableCell>project</TableCell>
       </TableRow>
     </TableHead>
   )
@@ -280,11 +280,11 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
     >
       {numSelected > 0 ? (
         <Typography sx={{ flex: '1 1 100%' }} color='inherit' variant='subtitle1' component='div'>
-          {numSelected} 選択済み
+          {numSelected} selected
         </Typography>
       ) : (
         <Typography sx={{ flex: '1 1 100%' }} variant='h6' id='tableTitle' component='div'>
-          ユーザーリスト
+          User List
         </Typography>
       )}
       {/* {numSelected > 0 ? (

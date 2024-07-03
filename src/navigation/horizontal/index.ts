@@ -3,7 +3,7 @@ import { HorizontalNavItemsType } from 'src/@core/layouts/types'
 
 const navigation = (): HorizontalNavItemsType => [
   {
-    title: '管理者トップ',
+    title: 'Administrator Top',
     icon: 'mdi:home-account',
     children: [
       {
@@ -13,14 +13,14 @@ const navigation = (): HorizontalNavItemsType => [
       },
       {
         icon: 'mdi:file-document-outline',
-        title: 'ご利用履歴',
+        title: 'Usage history',
         path: '/admin/bill'
       }
     ]
   },
 
   // {
-  //   title: 'プロンプト編集',
+  //   title: 'Prompt Editing',
   //   path: '/edit-prompt',
   //   icon: 'material-symbols:edit-document-rounded'
   // },
@@ -28,21 +28,21 @@ const navigation = (): HorizontalNavItemsType => [
     path: '/acl',
     action: 'read',
     subject: 'acl-page',
-    title: 'マイプロジェクト',
+    title: 'My Project',
     icon: 'material-symbols:home-repair-service-rounded'
   },
   {
     path: '/acl/edit',
     action: 'read',
     subject: 'acl-page',
-    title: 'プロジェクトの作成',
+    title: 'Create a project',
     icon: 'material-symbols:chair'
   },
   {
     path: '/acl/help',
     action: 'read',
     subject: 'acl-page',
-    title: 'このサービスについて',
+    title: 'About this service',
     icon: 'mdi:help-circle'
   }
 ]

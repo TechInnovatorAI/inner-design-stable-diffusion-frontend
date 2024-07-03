@@ -17,7 +17,7 @@ const MyProjectPage = () => {
     <Grid container spacing={6}>
       <Grid item xs={12}>
         <Card>
-          <CardHeader title={userName ? userName + 'のプロジェクト' : 'マイプロジェクト'}></CardHeader>
+          <CardHeader title={userName ? userName + 'Project' : 'My Project'}></CardHeader>
           <CardContent>
             <ProjectContent userId={userId} />
           </CardContent>
