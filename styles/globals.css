@@ -1,0 +1,170 @@
+html,
+body {
+  min-height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Inter', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+
+code[class*='language-'] {
+  padding: 0;
+}
+
+/* scroll */
+.scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  height: 6px;
+  width: 6px;
+  cursor: pointer;
+}
+
+.scroll::-webkit-scrollbar:hover {
+  width: 8px;
+  height: 8px;
+}
+
+.scroll::-webkit-scrollbar-track:hover {
+  height: 8px;
+  width: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #4c4f5a;
+  border-radius: 24px;
+}
+
+/* scroll */
+.MuiDialog-paperScrollPaper::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.MuiDialog-paperScrollPaper::-webkit-scrollbar-track {
+  height: 6px;
+  width: 6px;
+  cursor: pointer;
+}
+
+.MuiDialog-paperScrollPaper::-webkit-scrollbar:hover {
+  width: 8px;
+  height: 8px;
+}
+
+.MuiDialog-paperScrollPaper::-webkit-scrollbar-track:hover {
+  height: 8px;
+  width: 8px;
+}
+
+.MuiDialog-paperScrollPaper::-webkit-scrollbar-thumb {
+  background: #4c4f5a;
+  border-radius: 24px;
+}
+
+.swiper-button-next {
+  right: 400px !important;
+  color: white !important;
+  margin-top: 200px;
+}
+
+.swiper-button-prev {
+  left: 400px !important;
+  color: white !important;
+  margin-top: 200px;
+}
+
+/* loader */
+.wave {
+  width: 6px;
+  height: 50px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.MuiGrid-root {
+  transition: all 0.5s;
+}
+
+.MuiImageListItem-root:hover .MuiGrid-root {
+  display: flex;
+}
+
+/* modal z index to 3 for toast */
+
+.css-z2zh5s {
+  z-index: 3 !important;
+}
+
+.css-8ndowl {
+  z-index: 4 !important;
+}
