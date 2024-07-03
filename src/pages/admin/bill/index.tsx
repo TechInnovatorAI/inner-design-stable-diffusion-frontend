@@ -58,37 +58,37 @@ const headCells: readonly HeadCell[] = [
     id: 'name',
     numeric: false,
     disablePadding: true,
-    label: 'ユーザー名'
+    label: 'username'
   },
   {
     id: 'email',
     numeric: false,
     disablePadding: false,
-    label: 'Eメール'
+    label: 'Email'
   },
   {
     id: 'lastname',
     numeric: false,
     disablePadding: false,
-    label: '姓'
+    label: 'surname'
   },
   {
     id: 'firstname',
     numeric: false,
     disablePadding: false,
-    label: '名'
+    label: 'name'
   },
   {
     id: 'currentMonthsGenNumber',
     numeric: true,
     disablePadding: false,
-    label: '指定月の利用回数'
+    label: 'Number of uses in a specified month'
   },
   {
     id: 'genNumber',
     numeric: true,
     disablePadding: false,
-    label: 'トータル利用回数'
+    label: 'Total number of uses'
   }
 ]
 
@@ -123,7 +123,7 @@ function EnhancedTableHead(props: EnhancedTableProps) {
             </TableSortLabel>
           </TableCell>
         ))}
-        <TableCell>プロジェクト</TableCell>
+        <TableCell>project</TableCell>
       </TableRow>
     </TableHead>
   )
@@ -277,12 +277,12 @@ const BillManagement = () => {
       <Grid paddingX={6} paddingY={2} sx={{ display: 'flex' }}>
         {dateRange ? (
           <>
-            <p>検索期間: {timeFormat(dateRange.startDate.toDateString())}</p>
+            <p>Search date: {timeFormat(dateRange.startDate.toDateString())}</p>
             <p> ~ </p>
             <p> {timeFormat(dateRange.endDate.toDateString())}</p>
           </>
         ) : (
-          <p> 上記から表示したい月を指定してください。 </p>
+          <p> Please select the month you wish to display from the list above. </p>
         )}
       </Grid>
       <TableContainer component={Paper} className='scroll'>
@@ -323,7 +323,7 @@ const BillManagement = () => {
                   <TableCell align='left'>{data.currentMonthsGenNumber}</TableCell>
                   <TableCell align='left'>{data.genNumber}</TableCell>
                   <TableCell align='left'>
-                    <Button onClick={() => router.push(`/acl?id=${data.id}&name=${data.name}`)}>詳細</Button>
+                    <Button onClick={() => router.push(`/acl?id=${data.id}&name=${data.name}`)}>detailed</Button>
                   </TableCell>
                 </TableRow>
               )

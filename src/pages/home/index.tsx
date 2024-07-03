@@ -453,7 +453,7 @@ const Home = () => {
                   <TableCell align='left'>{timeFormat(data.lastlogindate)}</TableCell>
                   <TableCell align='left'>{data.role}</TableCell>
                   <TableCell align='left'>
-                    <Button onClick={() => router.push(`/acl?id=${data.id}&name=${data.name}`)}>詳細</Button>
+                    <Button onClick={() => router.push(`/acl?id=${data.id}&name=${data.name}`)}>detailed</Button>
                   </TableCell>
                   {/* <TableCell align='left'>{data.status}</TableCell> */}
                   {/* <TableCell align='left'>{data.verifyemail}</TableCell> */}
